@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<!-the nav class is in charge of navigation though the site -!>
+<div class="Nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="WhatIsOurVision.html">What Is Our Vision?</a></li>
+		<li><a href="WhoAreWe.html">Who Are We?</a></li>
+		<li><a href="WhoAreYou.html">Who Are You?</a></li>
+		<li><a href="WhereYouWillLive.html">Where You Will Live</a></li>
+		<li><a href="login.php">Login</a></li>
+	</ul>
+</div>
+<!- displays the image accross the top of the page-!>
+<div class="DisplayImage">
+	<img src="images/WhatIsOurVision6.png">
+</div>
+<!-has the main text/element of the page -!>
+<div class="MainText">
+<h1>What Is Our Vision?</h1>
+	<p>
+	All for one and one for all.  That is the creed which binds the Six Pilgrims, fostering a core of committed Christians not content to become 
+	churchgoers only when a Sunday service is being held in their own parish but to become church-followers prepared to travel on other Sundays
+	to support whichever of their fellow churches is bearing witness.
+	</p>
+	<p>
+	The Benefice of the Six Pilgrims is part of the Bruton and Cary Deanery of 45 parishes in the south-east corner of the Diocese of Bath & Wells,
+	centred on the beautiful medieval city of Wells, the smallest city in England.
+	</p>
+	<p>
+	Each of our six parishes is responsible for its own management and finances, with  churchwardens and PCCs to run services and to identify
+	and support pastoral care.  The fabric of all six churches is well maintained and receive favourable Quinquennial Reports.
+	</p>
+	<p>
+	 The churchwardens of the individual parishes come together on a quarterly basis to form the Six Pilgrims Committee
+	 which provides overall management in administrating the Diocesan common share that is allocated to the Benefice as a whole.
+	</p>
+	<p>
+	The annual figure is split into seven amounts. Six for payments by the parishes, with the level adjusted to reflect the 
+	size of the population. The seventh share is allocated to the Six Pilgrims account which is responsible for central 
+	expenses and the cost of producing the Six Pilgrims Magazine that is distributed free of charge to all 450 households each month.
+	</p>
+	<p>
+	Revenue for individual churches stems from plate gifts of the congregation and specific parish giving (much of it Gift Aid) 
+	with the results of their own fund-raising activities augmented by a share of the proceeds of major events jointly staged by all six churches.
+	</p>
+	<p>
+	Providing a constant presence throughout the whole Benefice is a Reader-in-Charge, licensed in October 2010, who takes many of the 
+	non-sacramental services and plays a leading role in fostering a community spirit.
+	</p>
+	<p>
+	With no other churches within the Benefice, we aim to cater for a wide range of Christians: Catholics, Methodists and Baptists alike.
+	Our mainstay service is a traditional sung holy communion and a popular Family service with active participation by the children. 
+	A monthly Matins service attracts a strong following from beyond the Benefice.  All six congregations come together on the third 
+	Sunday of the month for a joint holy communion service.    Major festivals are well attended e.g. at Christmas 400 people will attend across four services.
+	</p>
+	<p>
+	Visitors often comment on the simplicity and warmth of our worship.
+	</p>
+	<p>
+	There is a lively Church of England primary school of about 50 pupils at Lovington and there are child play groups and a nursery within the area.
+	Three village halls and three well-equipped playing fields provide ample opportunities for a wide range of social and leisure activities which bind
+	the peoples of the Six Pilgrims ever closer together.
+	</p>
+	</div>
+	<!- is an image slider which work off two input arrows going forward and backward-!>
+	<div class="ImageSlider">
+		<button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+		<img class="mySlides" src="images/WhatIsOurVision2.jpg">
+		<img class="mySlides" src="images/WhatIsOurVision3.jpg">
+		<img class="mySlides" src="images/WhatIsOurVision4.png">
+		<img class="mySlides" src="images/WhatIsOurVision5.jpg">
+	</div>
+	<!- is the script for each of the image sliders -!>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1} 
+			if (n < 1) {slideIndex = x.length} ;
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none"; 
+			}
+			x[slideIndex-1].style.display = "inline"; 
+		}
+	</script>
+	<!-the script first gives each image a number, then once an arrow is clicked it shows the new image the new number is 
+	aligned to, one arrow increases the number (moveing the screenshow forwards) and the other decreases the number (moving the screenshow backward)  -!>
+</body>
+</html>

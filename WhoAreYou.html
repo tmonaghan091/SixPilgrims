@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<!-the nav class is in charge of navigation though the site -!>
+<div class="Nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="WhatIsOurVision.html">What Is Our Vision?</a></li>
+		<li><a href="WhoAreWe.html">Who Are We?</a></li>
+		<li><a href="WhoAreYou.html">Who Are You?</a></li>
+		<li><a href="WhereYouWillLive.html">Where You Will Live</a></li>
+		<li><a href="login.php">Login</a></li>
+	</ul>
+</div>
+<!- displays the image accross the top of the page-!>
+<div class="DisplayImage">
+	<img src="images/WhoAreYou5.jpg">
+</div>
+<!-has the main text/element of the page -!>
+<div class="MainText">
+<h1> Who Are You?</h1>
+	<p> 
+		Free from administrative duties, the Resident Minister will be able to concentrate
+		on pastoral involvement throughout the Six, sustaining the efforts of our staunch band of
+		pilgrims and reaching out to those who have yet to join our mission.
+	</p>
+	<p> 
+		The Resident Minister will bring a new voice to the pulpit in our sacramental services and share with the Reader in Charge 
+		the performance of matins, family and childrens services, baptisms, weddings and funerals. 
+		Attendance at social events will cement the bond between the church and the people.
+	</p>
+	<p> 
+		In view of the scattered nature of the Benefice, a driving licence and car are essential
+		together with sufficient computer skills to maintain communications throughout the Six. 
+		All reasonable travel and out-of-pocket expenses are paid by the Benefice.
+	</p>
+	<p>
+		The weekly workload will normally comprise six sessions, a “session” being a morning, 
+		afternoon or evening, including one or two services on a Sunday. We propose one Sunday 
+		off a month. Provision is made for six weeks holiday per annum. 
+	</p>
+	<p>
+		Although the post is unpaid it comes with a stone-built cottage within 200 yards of one of our churches.  
+		Council tax and water rates are paid.
+	</p>
+	<p>
+		We welcome applications from suitable candidates irrespective of age, gender, marital status, national origin or tradition of worship.  
+	</p>
+	<p>
+		We would value the opportunity to discuss how our partnership with a new Resident Minister would work in practice.  
+		We are keen to maximise their particular gifts, whether they be in pastoral care, discipleship, teaching,
+		leading worship, promoting young families or whatever.
+	</p>
+	<p>
+		Our abiding concern is that our new priest should not feel in any way encumbered but 
+		freed to pursue a fruitful calling with our steadfast band of pilgrims
+	</p>
+	<p>
+		If after prayerful consideration you feel this may be the sort of challenge you seek please contact either:
+	</p>
+	<!-works as a list of contact information -!>
+	<div class="WhoAreYouList">
+	<ul>
+	<li>ARCHDEACON of WELLS</li>
+	<li>Ven Anne Gel</li>
+	<li>The Liberty</li>
+	<li>Wells</li>
+	<li>Somerset</li>
+	<li>BA5 2SU</li>
+	<li>Tel: 01749 685147</li>
+	<li>adwells@bathwells.anglican.org</li>
+	</ul>
+	<ul>
+	<li>RURAL DEAN</li>
+	<li>Revd Liz Mortimer</li>
+	<li>The Vicarage, Church Lane</li>
+	<li>Castle Cary</li>
+	<li>Somerset</li>
+	<li>BA7 7</li>
+	<li>Tel: 01963 351615</li>
+	<li>brucarydeanery@gmail.com</li>
+	</ul>
+	<ul>
+	<li>CHAIRMAN OF THE SIX PILGRIMS</li>
+	<li>Simon Hoar</li>
+	<li>The Shieling</li>
+	<li>Babcary</li>
+	<li>Somerset</li>
+	<li>TA11 7EA</li>
+	<li>Tel: 07904 344453</li>
+	<li>sihoar@yahoo.co.uk </li>
+	</ul>	
+	</div>
+</div>
+<!- is an image slider which work off two input arrows going forward and backward-!>
+<div class="ImageSlider">
+		<button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+		<img class="mySlides" src="images/WhoAreYou2.jpg">
+		<img class="mySlides" src="images/WhoAreYou6.jpg">
+		<img class="mySlides" src="images/WhoAreYou3.jpg">
+		<img class="mySlides" src="images/WhoAreYou4.png">
+	</div>
+	<!- is the script for each of the image sliders -!>
+	<script>
+
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1} 
+			if (n < 1) {slideIndex = x.length} ;
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none"; 
+			}
+			x[slideIndex-1].style.display = "inline"; 
+		}
+	</script>
+	<!-the script first gives each image a number, then once an arrow is clicked it shows the new image the new number is 
+	aligned to, one arrow increases the number (moveing the screenshow forwards) and the other decreases the number (moving the screenshow backward)  -!>
+</body>
+</html>

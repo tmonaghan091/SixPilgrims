@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<!-the nav class is in charge of navigation though the site -!>
+<div class="Nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="WhatIsOurVision.html">What Is Our Vision?</a></li>
+		<li><a href="WhoAreWe.html">Who Are We?</a></li>
+		<li><a href="WhoAreYou.html">Who Are You?</a></li>
+		<li><a href="WhereYouWillLive.html">Where You Will Live</a></li>
+		<li><a href="login.php">Login</a></li>
+	</ul>
+</div>
+<!- displays the image accross the top of the page-!>
+<div class="DisplayImage">
+	<img src="images/WhoAreWe4.jpg">
+</div>
+<!-has the main text/element of the page -!>
+<div class="MainText">
+<h1> Who Are We?</h1>
+	<p> 
+	This corner of Somerset is very rural; the working backbone is still farming interspersed with a variety of small enterprise businesses, 
+	plus a major employer in Westland Helicopters at nearby Yeovil and a military presence at the Royal Naval Air Station at Yeovilton.
+	</p>
+	<p> 
+	Nestling east of the busy A37, Fosse Way, and the A303, you will find the Somerset countryside at its best.  Small fields, 
+	grazing cattle and sheep, wild flower meadows and a botanically rich SSI nature reserve.  The whole overlooked to the south 
+	by Cadbury Hill (thought to be possibly the site of where King Arthur set his Camelot) and to the north by the legendary
+	Glastonbury Tor (reputedly the Isle of Avalon, final resting place of Arthur).  Stonehenge, the Jurassic Coast and Exmoor 
+	are within easy reach.
+	</p>
+	<p>
+	Scattered among the Six we have two village pubs, an ice cream factory and an artisan bakery. But, alas, no shop!
+	</p>
+	<p> 
+	Social life could not be more active.  Each of the six parishes has its own pattern of village events:
+	<p>
+	Sports days, Bonfire Night, wassailing, boules competitions, sponsored walks, road races. 
+	</p>
+	<p>
+	Coffee mornings, a lunch club, folk music concerts, a film society, harvest suppers, fetes and bazaars.
+	</p>
+	<p>
+	Quiz nights, auctions of promises, antiques evenings, flower festivals.
+	</p>
+	<p>
+	So many ways in which we strengthen our community spirit and raise the funds to keep the Six financially viable.
+	</p>
+	<p>
+	The Christian calendar provides more opportunities for interactivity. Palm Sunday parades with donkeys,
+	Good Friday processions behind a large cross, beating of the bounds on Rogation Sunday as well as children
+	being encouraged to create their own Christingle symbols and to bring their pets to an open-air service in 
+	the churchyard.  Music is a popular element with the Six Pilgrims choir touring the Benefice and children 
+	forming their own impromptu band, the Babcary Big Noise, which performs at our Family Services.
+	</p>
+	<p> 
+	Life is rarely dull in this secluded corner of Somerset.
+	</p>
+</div>
+<!- is an image slider which work off two input arrows going forward and backward-!>
+<div class="ImageSlider">
+		<button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+		<img class="mySlides" src="images/WhoAreWe2.jpg">
+		<img class="mySlides" src="images/WhoAreWe1.jpg">
+		<img class="mySlides" src="images/WhoAreWe3.png">
+	</div>
+	<!- is the script for each of the image sliders -!>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1} 
+			if (n < 1) {slideIndex = x.length} ;
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none"; 
+			}
+			x[slideIndex-1].style.display = "inline"; 
+		}
+	</script>
+	<!-the script first gives each image a number, then once an arrow is clicked it shows the new image the new number is 
+	aligned to, one arrow increases the number (moveing the screenshow forwards) and the other decreases the number (moving the screenshow backward)  -!>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?php
+include('login.php'); // Include Login Script
+if ((isset($_SESSION['email']) != '')) 
+{
+header('Location: home.php');
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<div class="Nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="WhatIsOurVision.html">What Is Our Vision?</a></li>
+			<li><a href="WhoAreWe.html">Who Are We?</a></li>
+			<li><a href="WhoAreYou.html">Who Are You?</a></li>
+			<li><a href="WhereYouWillLive.html">Where You Will Live</a></li>
+		</ul>
+	</div>
+	
+    <div class="MainText">
+        <h1>Login</h1>
+		<br>
+        <p>Please fill in your details to login.</p>
+		<br>
+        <form action="login.php" method="POST">
+		<p>
+			<input type="text" placeholder="Email" name="email"/>
+		</p>
+		<p>
+			<input type="text" placeholder="Password" name="password"/>
+		</p>
+			<button type="submit" name="submit" value="Login">Login</button>
+		</form> </br>
+    </div>    
+</body>
+</html>

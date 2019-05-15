@@ -1,0 +1,268 @@
+*{
+	background: white;
+	overflow: auto;
+	border:none;
+	padding: 0px;
+	margin: 0px;
+	background-color: # ;
+	display: inline-block;
+	position: relative;
+}
+
+@media only screen and (max-width: 768px){
+.Title{
+	background: none;
+}
+.Title h1{
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	text-align: center;
+}
+.Title h2{
+	display: none;
+}
+.Title ul{
+	display: none;
+}
+
+.DisplayImage{
+
+}
+.DisplayImage img{
+	display: inline-block;
+	background: black;
+	padding-left: 20vw;
+	padding-right: 20vw;
+	width: 60vw;
+}	
+.ImageSlider{
+	display: none;
+} 
+.Nav {
+	background: black;
+	width: 100vw;
+	height: 9vh;	
+}
+.Section1{
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+.Section2 {
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+.Section3 {
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+.Section4 {
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+.Nav ul{
+	background: black;
+	width: 98vw;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.Nav li a {
+	font-size: 2.3vw;
+	background: black;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1vh 2vw;
+    text-decoration: none;
+	border-right: 1px solid #bbb;
+}
+.WhoAreYouList ul{
+	width: 50vw;
+	padding-left: 25vw;
+	display: inline-block;
+}
+		}
+
+@media only screen and (min-width: 768px){
+.Title{
+	background: none;
+	text-align: center;
+	width: 100vw;
+	height: 60vh;
+	color: Black;
+	background: url('images/Main_Banner.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.Title h1{
+	width:50%;
+	background: none;
+	position: absolute;
+	top: 5%;
+	left: 25%;
+	font-size: 10vh;
+}
+.Title h2{
+	width: 70%;
+	background: none;
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	font-size: 7vh;
+}
+.Title ul{
+	width: 90%;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	background: none;
+	text-align:none;
+	position: absolute;
+	left: 0%;
+	top: 43%;
+	font-size: 3vh;
+}
+
+.Nav {
+	background: black;
+	margin:0;
+	padding:0;
+	width: 100vw;
+	height: 50px;	
+}
+.Nav ul{
+	background: black;
+	width: 98vw;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.Nav li a {
+	background: black;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2vh 5vw;
+    text-decoration: none;
+	border-right: 1px solid #bbb;
+}
+
+/* Change the link color to #111 (black) on hover */
+.Nav li a:hover {
+    background-color: #111;
+}
+.Row{
+	height: 31vh;
+	width: 100%;
+}
+.Section1{
+	font-size: 2.2vh;
+	height: 31vh;
+	width: 23.5%;
+	margin-left: 1vw;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-top: 2vh;
+}
+.Section2 {
+	font-size: 2.2vh;
+	height: 31vh;
+	width: 23.5%;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-top: 2vh;
+}
+.Section3 {
+	font-size: 2.2vh;
+	height: 31vh;
+	width: 23.5%;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-top: 2vh;
+}
+.Section4 {
+	font-size: 2.2vh;
+	height: 31vh;
+	width: 23.5%;
+	margin-top: 2vh;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.DisplayImage img{
+	display: inline-block;
+	background: black;
+	padding-left: 20vw;
+	padding-right: 20vw;
+	width: 60vw;
+}
+.MainText{
+	float:left;
+	display: block;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	padding:10px;
+	font-size: 1.2vw;
+}
+.MainText img{
+	margin-left:clear;
+	margin-right:clear;
+	width:60vw;
+}
+.MainText p{
+	padding-top: 5px;
+	padding-bottom:5px;
+}
+.MainText form p{
+	width: 100%;
+}
+.MainText table{
+	display: inline-table;
+	width: 90vw;
+}
+.MainText tr{
+	width: 90vw;
+	display: inline-table;
+}
+.MainText td{
+	height: 50px;
+	width: 9vw;
+	border: solid;
+	display: inline-table;
+}
+.MainText th{
+	font-size: 0.8vw;
+	height: 50px;
+	width: 4vw;
+	border: solid;
+	display: inline-table;
+}
+.WhoAreYouList ul{
+	padding-left: 2vw;
+	display: inline-block;
+}
+.WhoAreYouList ul li{
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.ImageSlider button{
+	width: 100vw;
+	height: 25px;
+	background: none;
+}
+.ImageSlider img{
+	overflow: none;
+	background: black;
+	width: 40vw;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+}
